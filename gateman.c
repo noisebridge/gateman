@@ -31,7 +31,7 @@
 #define SELECT_TIMEOUT 100000
 
 //#define DEBUG
-#define DAEMON
+//#define DAEMON
 
 /* Copyright 2011 -- Jonathan Lassoff <jof@thejof.com>
  *

@@ -47,7 +47,7 @@ do_start()
 	#   2 if daemon could not be started
 	start-stop-daemon --start --quiet --make-pidfile --pidfile $PIDFILE --chuid gateman:lp --exec $DAEMON --test > /dev/null \
 		|| return 1
-	start-stop-daemon --start --quiet --make-pidfile --pidfile $PIDFILE --chuid gateman:lp --exec $DAEMON -- \
+	start-stop-daemon --start --quiet --make-pidfile --pidfile $PIDFILE --chuid gateman:lp --exec $DAEMON --background -- \
 		$DAEMON_ARGS \
 		|| return 2
 	# Add code here, if necessary, that waits for the process to be ready
